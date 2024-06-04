@@ -11,7 +11,7 @@ console.log(agePassenger); //DEBUG ANNI
 
 
     // 3.1) il prezzo del biglietto è definito in base ai km (0.21 € al km)
-let ticket = destination / 0.21;
+let ticket = destination * 0.21;
 
 ticket = ticket.toFixed(2);
 
@@ -39,7 +39,7 @@ if(agePassenger < 18){
 
 } else {
     // Prezzo comune
-    ticket = destination / 0.21;
+    ticket = destination * 0.21;
     
     // 4.3)
     document.getElementById('price').innerHTML = 'Il prezzo del biglietto è : ' + ticket.toFixed(2) + '€';
